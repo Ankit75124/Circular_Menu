@@ -1,0 +1,485 @@
+.menu-bar{
+    bottom:50px;
+    right:200px;
+    position: absolute;
+    display: flex;
+    background: cyan;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid rgb(232, 232, 255);
+
+}
+
+.menu-bar div{
+    width: 100;
+    margin: 2px;
+    padding: 2px;
+}
+
+
+.todo{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border-radius: 50%;
+    padding:0.5rem;
+    cursor: pointer;
+}
+
+.todo img {
+    fill:red ;
+    height:30px;
+}
+
+.submenu1{
+    height:350px;
+    width:350px;
+    transform:scale(0);
+    border-radius:50%;
+    position:absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+    color: rgb(107, 101, 101);
+    box-shadow:0px 0px 40px;
+}
+.submenu2{
+    height:350px;
+    width:350px;
+    transform:scale(0);
+    border-radius:50%;
+    position:absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+    color: rgb(107, 101, 101);
+    box-shadow:0px 0px 40px;
+}
+
+.submenu3{
+    height:350px;
+    width:350px;
+    transform:scale(0);
+    border-radius:50%;
+    position:absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+    color: rgb(107, 101, 101);
+    box-shadow:0px 0px 40px;
+}
+
+.submenu4{
+    height: 350px;
+    width: 350px;
+    transform:scale(0);
+    border-radius:50%;
+    position:absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+    color: rgb(107, 101, 101);
+    box-shadow:0px 0px 40px;
+}
+.layer2{
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    position:absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+    transform:scale(0);
+    
+}
+
+.menu.active {
+   
+    transform:scale(1);    
+}
+
+.bar {
+  margin: 0 auto;
+  position: absolute;
+  background-color: #fff;
+}
+
+.horizontal {
+  width: 150px;
+  height: 20%;
+  left: 20%;
+  top: 40%;
+  border-radius: 25%;
+  
+
+}
+
+.vertical {
+  width: 20%;
+  height: 150px;
+  left: 40%;
+  top: 20%;
+  border-radius: 25%;
+  
+
+}
+.layer2 .items{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    position:absolute;
+    background-color:#fff;
+    font-size:1.5em;
+}
+
+.items span{
+    position: absolute;
+    right: 12.5px;
+    top:12.5px;
+}
+
+
+.menuitem4{
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    color:rgb(107, 101, 101);
+  box-shadow:1px 1px 40px;
+  cursor: pointer;
+    
+}
+
+.menuitem4:hover{
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+    background-color: rgb(70, 132, 212);
+    color: #fff;
+    
+}
+
+.menuitem4.hovered{
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+    background-color: rgb(70, 132, 212);
+    color: #fff;
+}
+
+
+.menuitem3{
+    top:100px;
+    border-end-end-radius: 25%;
+    border-end-start-radius: 25%;
+    color:rgb(107, 101, 101);
+  box-shadow:0px 0px 40px;
+  cursor: pointer;
+
+}
+.menuitem3:hover{
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    background-color: rgb(70, 132, 212);
+    color:#fff;
+}
+
+.menuitem3.hovered{
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    background-color: rgb(70, 132, 212);
+    color:#fff;
+}
+
+
+.menuitem2{
+    left:100px;
+    border-top-right-radius: 25%;
+    border-end-end-radius: 25%;
+    color:rgb(107, 101, 101);
+    box-shadow:0px 0px 40px ;
+    cursor: pointer;
+}
+.menuitem2:hover{
+    background-color: rgb(70, 132, 212);
+    border-top-left-radius: 35%;
+    border-end-start-radius: 35%;
+    color: #fff;
+}
+.menuitem2.hovered{
+    background-color: rgb(70, 132, 212);
+    border-top-left-radius: 35%;
+    border-end-start-radius: 35%;
+    color: #fff;
+}
+
+.menuitem1{
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    color:rgb(107, 101, 101);
+  box-shadow:0px 0px 40px;
+  cursor: pointer;
+}
+.menuitem1:hover{
+    border-end-end-radius: 35%;
+    border-end-start-radius: 35%;
+    background-color: rgb(70, 132, 212);
+    color:#fff;
+}
+
+.menuitem1.hovered{
+    border-end-end-radius: 35%;
+    border-end-start-radius: 35%;
+    background-color: rgb(70, 132, 212);
+    color: #fff;
+}
+
+
+
+
+.layer1{
+    background-color: #fff;
+    height:50px;
+    width:50px;
+    position:absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    cursor: pointer;
+    
+}
+
+.plus{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    background-color:black;
+    border-style: double;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color:white;
+    transition: 0.7s;
+}
+
+.toggle.rotate{
+    
+    transform: rotate(300deg);
+}
+
+
+
+.icon{
+    bottom:15px;
+    height:20px;
+}
+
+
+.ctrl {
+  position: absolute;
+  margin: auto;
+  top:115px;
+  
+  right:145px;
+  
+  font:20px Verdana, sans-serif;
+  transition: .5s;
+}
+
+a.ctrl, .ctrl div {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px #fff;
+  cursor: pointer;
+  z-index: -1;
+  font-size:2em;
+}
+
+
+.status .icon{
+    position:relative;
+}
+
+.tip {
+  z-index: -1;
+  /* outline: dotted 1px white; */
+  margin: -5em;
+  width: 15em; height: 15em;
+  transform: scale(1);
+  list-style: none;
+  opacity: 1;
+    transform: rotate(15deg);
+}
+
+
+
+
+.slice {
+  overflow: hidden;
+  position: absolute;
+  /* outline: solid 2px black; */
+  width: 50%; height:50%;
+  transform-origin: 100% 100%;
+  z-index: -1;
+  
+  
+}
+
+/* .slice .status .icon{
+    transform:rotate(calc(30deg * var(--j))) skewY(60deg);
+} */
+
+.slice:first-child { transform: rotate(0deg) skewY(60deg); }
+.slice:nth-child(2) { transform: rotate(30deg) skewY(60deg); }
+.slice:nth-child(3) { transform: rotate(60deg) skewY(60deg); }
+.slice:nth-child(4) { transform: rotate(90deg) skewY(60deg); }
+.slice:nth-child(5) { transform: rotate(120deg) skewY(60deg); }
+.slice:nth-child(6) { transform: rotate(150deg) skewY(60deg); }
+.slice:nth-child(7) { transform: rotate(180deg) skewY(60deg); }
+.slice:nth-child(8) { transform: rotate(210deg) skewY(60deg); }
+.slice:nth-child(9) { transform: rotate(240deg) skewY(60deg); }
+.slice:nth-child(10) { transform: rotate(270deg) skewY(60deg); }
+.slice:nth-child(11) { transform: rotate(300deg) skewY(60deg); }
+.slice:last-child { transform: rotate(330deg) skewY(60deg); } 
+
+/* covers for the inner part of the links so there's no hover trigger between */
+.slice:after {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 136%; height: 136%;
+  border-radius: 50%;
+  /* "unskew" = skew by minus the same angle by which parent was skewed */
+  transform: skewY(-60deg);
+
+  
+}
+
+
+
+
+
+/* menu links */
+.slice div {
+    position: absolute;
+  width: 200%; 
+  height: 200%;
+  border-radius: 50%;
+  z-index: -1;
+  /* "unskew" & rotate by -A°/2 */
+  transform: skewY(-60deg) rotate(-15deg);
+  background: /* lateral separators */
+      linear-gradient(75deg, 
+    transparent 40%, white 60%, transparent 54%) no-repeat 36.5% 0,
+      linear-gradient(-75deg, 
+    transparent 50%, white 50%, transparent 54%) no-repeat 63.5% 0,
+    /* make sure inner part is transparent */
+    radial-gradient( white
+    45%, 55%, rgb(78, 77, 77) 50%);
+  background-size: 15% 15%, 15% 15%, cover;
+  line-height: 1.4;
+  
+}
+
+
+
+
+
+.slice .icon{
+    z-index: -1;
+    position: relative;
+}
+
+
+.slice .todo{
+    height: 0px;
+    width:  0px;
+    left: 192px;
+    top:40px;
+    border-radius: 50%;
+    background: rgba(127,127,127,0);
+    transform: rotate(270deg) skewX(10deg);     
+}
+
+
+
+
+.status .todo img{
+    left: 34px;
+    bottom: 27px;
+    height:20px;
+    background:rgb(78, 77, 77);
+    position: absolute;
+    transform:rotate(calc(98deg - 30deg * var(--j)));
+    
+}
+
+
+.status #icon3{
+    transform:rotate(0deg);
+}
+
+.prac{
+    height: 50px;
+    width: 50px;
+    background:red;
+}
+
+.submenu1.show{
+    transform:scale(1);
+}
+
+
+.submenu2.show{
+    transform:scale(1);
+}
+
+.submenu3.show{
+    transform:scale(1);
+}
+
+.submenu4.show{
+    transform:scale(1);
+}
+
+.status:hover{
+    background: /* lateral separators */
+      linear-gradient(75deg, 
+    transparent 40%, white 60%, transparent 40%) no-repeat 36.5% 0,
+      linear-gradient(-75deg, 
+    transparent 48%, white 48%, transparent 4%) no-repeat 63.5% 0,
+    /* make sure inner part is transparent */
+    radial-gradient(rgba(127,127,127,0) 50%,grey  55%,rgb(10, 10, 10) 28%);
+    background-size: 15% 15%, 15% 15%, cover; 
+    line-height: 1.4;
+
+}
+
+.status:hover .todo img{
+    background:black;
+}
+
+#icon3 .todo{
+    transform: rotate(160deg);
+}
